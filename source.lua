@@ -1,11 +1,12 @@
 --[[
-    Version: 1.0.5
-    Last Update: 14 / 11 / 2022 | Day / Month / Year
+    Version: 1.0.6
+    Last Updated: 19 / 08 / 2023
+    Update Maker: PlayerPro342
 ]]--
 
 --// Source
 function obfuscate(source,VarName,WaterMark)
-        warn("Started obfuscate")
+        warn("Started obfuscation.")
         local Variable = VarName or "Taurus_"
         local WM
 
@@ -16,9 +17,9 @@ function obfuscate(source,VarName,WaterMark)
         local ticks = tick()
 
         if typeof(WaterMark) == "string" and WaterMark ~= nil then
-            WM = "    "..tostring(WaterMark).." | Secure by GhostyDuckyy#7698"
+            WM = "    "..tostring(WaterMark).." | Secure by GhostyDuckyy#7698 | Fork by PlayerPro342"
         else
-            WM = "    ".."WaterMark".." | Secure by GhostyDuckyy#7698"
+            WM = "    ".."WaterMark".." | Secure by GhostyDuckyy#7698 | Fork by PlayerPro342"
         end
 
         WM = "--[[".."\n".. tostring(WM) .."\n".."]]--".."\n\n"
@@ -68,15 +69,26 @@ function obfuscate(source,VarName,WaterMark)
             local highest = 1
 
             local topic = {
-                "Deobfuscate?",
+                "The Skids and The Obfuscators",
+                "new mainmodule dropped",
+                "time to add this to my gui!1",
                 "Hello World!",
                 "IronBrew Fork? Nope.",
                 "PSU Fork? Nope.",
                 "Touch some grass",
                 "New update when?",
-                "GhostyDuckyy",
                 "Free obfuscator!",
-                "E",
+                "For Everyone",
+                "PlayerPro342's Fork",
+                "Yo new MoonSec dropped",
+                "luau compiler when?",
+                "Just ↯↯",
+                "Bro...",
+                "NaN + -INF - math.huge * (5 % 2²)",
+                "you got haxxed!",
+                "moonsec? more like moonse-",
+                "nice obfuscator 0⥿0",
+                "Understandable: ✖︎",
                 random_(math.random(50,150)),
             }
 
@@ -134,8 +146,8 @@ function obfuscate(source,VarName,WaterMark)
             end
 
         local obfuscated = WM..troll_var.."; "..Loadstring.."; "..fake_code(math.random(2,4), math.random(400,600))..TableByte.."; "..[[local ]]..Variable..tostring(random_(math.random(15,20))).." = "..func[1].."("..func[2]..")".."; "..fake_code(math.random(2,4), math.random(string.len(source) / 2, string.len(source) * 2))
-        setclipboard(obfuscated)
-        warn("Done obfuscate in "..tostring(tick() - ticks).." second")
+        print("Script obfuscated: " .. obfuscated)
+        warn("Done obfuscate in "..tostring(tick() - ticks).." second(s).")
     return
 end
 
