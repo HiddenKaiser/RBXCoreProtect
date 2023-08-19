@@ -1,9 +1,9 @@
 # RBXLuaObfuscator
-this is a modified [RBXLuaObfuscator](https://github.com/kosuke14/RBXLuaObfuscator) (made by [**kosuke14**](https://github.com/kosuke14)) version
+This is a modified version of [RBXLuaObfuscator](https://github.com/GhostDuckyy/RBXLuaObfuscator) made by **GhostDuckyy**.
 
-### Script
+## Obfuscation
 ```lua
-local obfuscator = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/RBXLuaObfuscator/main/source.lua"))()
+local obfuscator = loadstring(game.HttpService:GetAsync("https://raw.githubusercontent.com/PlayerPro342/RBXLuaObfuscator/main/source.lua"))()
 
 obfuscator(
  [===[
@@ -14,4 +14,3 @@ obfuscator(
  "Protected" --// WaterMark
 )
 ```
-**NOTE**: will be copied to clipboard after executed!
